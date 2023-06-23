@@ -1,0 +1,12 @@
+.page {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 100ch) minmax(1rem, 1fr);
+    grid-template-rows: 1rem auto 1rem;
+}
+
+.wrapper {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    gap: 1rem;
+}

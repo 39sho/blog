@@ -1,0 +1,20 @@
+.linkCard {
+    border: thin solid black;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    color: black;
+}
+
+.img {
+    grid-row: 1 / 4;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.url {
+    color: gray;
+}
