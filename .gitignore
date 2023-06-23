@@ -13,7 +13,11 @@
 /out/
 
 # production
+<<<<<<< HEAD
 /out
+=======
+/build
+>>>>>>> cfa47344b785b30e595f923784e3fca2a4c65dcf
 
 # misc
 .DS_Store

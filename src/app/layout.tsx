@@ -1,8 +1,11 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
+<<<<<<< HEAD
 import styles from './layout.module.css'
 
+=======
+>>>>>>> cfa47344b785b30e595f923784e3fca2a4c65dcf
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,11 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+<<<<<<< HEAD
       <body className={`${inter.className} ${styles.page}`}>
         <div className={styles.wrapper}>
           {children}
         </div>
       </body>
+=======
+      <body className={inter.className}>{children}</body>
+>>>>>>> cfa47344b785b30e595f923784e3fca2a4c65dcf
     </html>
   )
 }
