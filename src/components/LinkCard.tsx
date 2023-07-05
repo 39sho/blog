@@ -10,7 +10,7 @@ type Ogp = {
 }
 
 const LinkCard = async ({ url }: { url: string }) => {
-    const res = await fetch(new URL(url, 'http://localhost:3000/'), {
+    const res = await fetch(new URL(url, 'http://127.0.0.1:3000/'), {
         headers: {
             'user-agent': 'bot',
         },
@@ -32,8 +32,8 @@ const LinkCard = async ({ url }: { url: string }) => {
     return (
         <a href={url} className={styles.linkCard}>
             <img src={ogp.image} className={styles.img}></img>
-            <span>{ogp.title}</span>
-            <span>{ogp.description}</span>
+            <span className={styles.title}>{ogp.title}</span>
+            <span className={styles.description}>{ogp.description}</span>
             <span className={styles.url}>{url}</span>
         </a>
     )

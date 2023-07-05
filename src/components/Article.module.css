@@ -1,0 +1,8 @@
+.outer {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 50ch) minmax(1rem, 1fr);
+}
+
+.inner {
+    grid-column: 2;
+}

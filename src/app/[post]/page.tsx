@@ -1,5 +1,18 @@
 import Article from '@/components/Article'
+import { Metadata } from 'next'
 import fs from 'node:fs/promises'
+
+export const generateMetadata = async ({ params: { post } }: { params: { post: string } }): Promise<Metadata> => {
+
+    return {
+        title: post,
+        openGraph: {
+            title: post,
+            description: post,
+            url: post,
+        },
+    };
+}
 
 export const generateStaticParams = async () => {
     const posts = await fs.readdir('posts/');
