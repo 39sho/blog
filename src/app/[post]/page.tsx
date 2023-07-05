@@ -10,6 +10,7 @@ export const generateMetadata = async ({ params: { post } }: { params: { post: s
             title: post,
             description: post,
             url: post,
+            images: ["/opengraph-image.png"],
         },
     };
 }
