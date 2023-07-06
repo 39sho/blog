@@ -10,7 +10,7 @@ type Ogp = {
 }
 
 const LinkCard = async ({ url }: { url: string }) => {
-    const res = await fetch(new URL(url, 'http://127.0.0.1:3000/'), {
+    const res = await fetch(new URL(url, 'https://39sho.github.io/blog/'), {
         headers: {
             'user-agent': 'bot',
         },
