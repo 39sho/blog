@@ -5,7 +5,7 @@ import fs from 'node:fs/promises'
 export const generateMetadata = async ({ params: { post } }: { params: { post: string } }): Promise<Metadata> => {
 
     return {
-        metadataBase: new URL('https://39sho.github.io/blog'),
+        metadataBase: new URL('https://39sho.github.io/'),
         title: post,
         openGraph: {
             title: post,
